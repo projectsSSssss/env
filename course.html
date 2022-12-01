@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="pages/course.css" rel="stylesheet">
+  <title id="title">Title</title>
+</head>
+<body class="page">
+  <header class="header">
+    <a href="#" class="header__logo"></a>
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__menu-item link" href="index.html">Главная</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main >
+    <section class="course" style="overflow: hidden;">
+      <div class="course__iframe-wrapper">
+        <iframe class="subheader__iframe"
+                src="" frameborder="0" allow="fullscreen" id="widget2"></iframe>
+        <div class="course__overlay">
+          <p class="course__subtitle">Цикл лекций</p>
+          <pre> <h1 class="course__title"></h1></pre>
+          <p class="course__text"></p>
+        </div>
+      </div>
+    </section>
+    <div class="videos-gallery"></div>
+
+    <section class="section curators">
+
+    </section>
+
+    <template id="curator-item">
+      <a href="#" class="curators__container">
+        <img src="" alt="фото" class="curators__img">
+        <div style="position: absolute; top: 0; bottom: 0; right: 0; left: 0; background-color: rgba(0, 0, 0, 0.5)"></div>
+        <p class="curators__name"></p>
+        <p class="curators__description"></p>
+      </a>
+    </template>
+
+    <template id="video-item">
+      <section class="section video">
+        <h2 class="section__title">
+        </h2>
+        <pre class="section__text video__text">
+        </pre>
+        <iframe class="video__iframe" width="100%" height="540px" src="" frameborder="0" allowfullscreen=""></iframe>
+      </section>
+    </template>
+  </main>
+  <script SRC="courses-value.js"></script>
+  <script src="pages/course.js"></script>
+</body>
+</html>

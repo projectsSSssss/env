@@ -1,0 +1,409 @@
+/* @import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/page/page.css);
+@import url(../blocks/link/link.css);
+
+@import url(../blocks/section/section.css);
+@import url(../blocks/section/__title/section__title.css);
+@import url(../blocks/section/__text/section__text.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-item/header__menu-item.css);
+
+@import url(../blocks/subheader/subheader.css);
+@import url(../blocks/subheader/__text/subheader__text.css);
+
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__title/about__title.css);
+@import url(../blocks/about/__text/about__text.css);
+@import url(../blocks/about/__line/about__line.css);
+
+@import url(../blocks/tutorial/__list/tutorial__list.css);
+@import url(../blocks/tutorial/__list-item/tutorial__list-item.css);
+@import url(../blocks/tutorial/__list-img/tutorial__list-img.css);
+@import url(../blocks/tutorial/__list-title/tutorial__list-title.css);
+@import url(../blocks/tutorial/__list-text/tutorial__list-text.css);
+@import url(../blocks/tutorial/__list-btn/tutorial__list-btn.css);
+
+@import url(../blocks/answer/answer.css);
+@import url(../blocks/answer/__list/answer__list.css);
+@import url(../blocks/answer/__list-item/answer__list-item.css);
+@import url(../blocks/answer/__list-number/answer__list-number.css);
+@import url(../blocks/answer/__list-title/answer__list-title.css);
+@import url(../blocks/answer/__list-text/answer__list-text.css);
+
+@import url(../blocks/quote/quote.css);
+@import url(../blocks/quote/__text/quote__text.css);
+@import url(../blocks/quote/__author-avatar/quote__author-avatar.css);
+@import url(../blocks/quote/__author-name/quote__author-name.css);
+
+@import url(../blocks/footer/footer.css); */
+.about__line {
+    width: 160px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+  }
+.about__text {
+    padding-top: 40px;
+    width: 860px;
+    color: white;
+}
+.about__title {
+  color: white;
+}
+.about {
+    background: linear-gradient(rgba(0, 64, 64, 0.8), rgba(6, 31, 6, 0.8));
+  
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    padding: 30px calc((100% - 1200px) / 2);
+}
+.answer__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px 20px;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+.answer__list-item {
+  width: 360px;
+  display: flex;
+  gap: 20px;
+  }
+.answer__list-number {
+display: flex;
+align-items: center;
+justify-content: center;
+min-width: 60px;
+height: 60px;
+border-radius: 90px;
+background-color: #eb633d;
+color: white;
+margin: 0;
+}
+.answer__list-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.55;
+    font-style: italic;
+    margin-bottom: 0;
+}
+  
+.answer__list-title {
+margin: 0;
+font-weight: 700;
+font-size: 18px;
+font-style: italic;
+line-height: 1.35;
+}
+      
+.course__iframe-wrapper {
+    margin: 0 auto;
+    width: 1890px;
+    height: 976px;
+  }
+  
+  @media screen and (max-width: 1889px){
+    .course__iframe-wrapper {
+      width: 100%;
+    }
+}
+.course__overlay {
+  margin-top: -15px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+    
+
+.course__subtitle {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+.course__text {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  max-width: 700px;
+}
+.course__title {
+  color: white;
+  text-align: center;
+  font-size: 46px;
+  letter-spacing: .0px;
+  line-height: 1.17;
+  font-weight: bold;
+}
+        
+.course {
+  position: relative;
+  height: 976px;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.curators__container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.curators__description {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.55;
+}
+.curators__img {
+  display: block;
+  width: 560px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: 1s;
+}
+
+.curators__img:hover {
+  transform: scale(1.1);
+}
+.curators__name {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.23;
+}
+.curators {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+}
+.footer {
+  background-color: black;
+  width: 1200px;
+  padding: 30px calc((100% - 1200px) / 2);
+}
+.header {
+  background-color: #f3f3f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 1200px;
+  padding: 30px calc((100% - 1200px) / 2);
+}
+.header__logo {
+  width: 150px;
+  height: 80px;
+  display: block;
+  background: no-repeat center/cover url(../images/logo.jpeg);
+}
+.header__menu {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  list-style-type: none;
+}
+.header__menu-item {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+.header__menu-item:active {
+  color: black;
+}
+
+.link {
+  transition: opacity .5s;
+  text-decoration: none;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+.page {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.quote__author-avatar {
+  display: block;
+  border-radius: 90px;
+  margin: 0 auto;
+}
+.quote__author-name {
+  display: block;
+  width: 960px;
+  margin: 14px auto 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: bold;
+}
+.quote__text {
+  margin-bottom: 30px;
+  line-height: 1.55;
+}
+              
+.quote {
+  background-color: #ebebeb;
+  width: 1200px;
+  padding: 90px calc((100% - 1200px) / 2);
+  
+}
+.section__text {
+  width: 1060px;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+.section__title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.23;
+  margin: 0;
+  padding-bottom: 40px;
+}
+.section__up {
+  position: absolute;
+  top: -300px;
+}
+.section {
+  width: 1200px;
+  padding: 30px calc((100% - 1200px) / 2);
+  background-color: white;
+}
+.subheader__iframe {
+  position: absolute;
+  top: -300px;
+  height: 1276px;
+  width: 1890px;
+  z-index: -1;
+}
+.subheader__text {
+  color: #8a8a8a;
+  padding-top: 40px;
+  font-size: 20px;
+}
+.subheader {
+  background-color: white;
+}
+.tutorial__list {
+  padding: 30px 0 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tutorial__list-btn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #eb633d;
+  color: white;
+}
+.tutorial__list-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.tutorial__list-item {
+  width: 560px;
+}
+
+
+.tutorial__list-item:nth-child(n+3) {
+  width: 360px;
+}
+
+.tutorial__list-text {
+  margin: 16px 0 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+.tutorial__list-title {
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.15;
+  font-weight: bold;
+}
+.video__text {
+  text-align: left;
+  padding-bottom: 40px;
+}
+                                       
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url(../vendor/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url(../vendor/fonts/Roboto-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: italic;
+  src: url(../vendor/fonts/Roboto-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  src: url(../vendor/fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: italic;
+  src: url(../vendor/fonts/Roboto-BoldItalic.ttf) format('truetype');
+}
+
+
+
+
+
